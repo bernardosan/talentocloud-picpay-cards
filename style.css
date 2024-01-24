@@ -56,17 +56,17 @@ img {
 }
 
 .card{
-    box-shadow:  0px 10px 10px 0px rgba(0,0,0,0.1);
+    box-shadow:  0px 10px 10px 0px rgba(0,0,0,0.05);
     border-radius: 10px 10px 10px 10px;
     transition: all 500ms;
 }
 
 .card:hover{
-    box-shadow:  0px 10px 30px 0px rgba(0,0,0,0.2);
+    box-shadow:  0px 10px 30px 0px rgba(0,0,0,0.1);
 }
 
 .image-container {
-    background-color: rgba(176, 176, 176, 0.2);
+    background-color: rgba(176, 176, 176, 0.1);
     border-radius: 10px 10px 0 0;
     padding: 1.6rem 0;
 }
@@ -119,4 +119,58 @@ img {
     font-weight: 400;
     line-height: 2.6rem;
     
+}
+
+
+/******* Modal ***************/
+
+.modal-content{
+    display: flex;
+    flex-direction: column;
+    padding: 24px 20px;
+    gap: 32px;
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 0px 10px 14px 18px rgba(0,0,0,0.05);
+    margin: 32px;
+    width: 100%;
+    max-width: 488px;
+    position: relative;
+}
+
+.modal-content .icon-text{
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+
+.modal-content .icon-text .check-icon{
+    border-radius: 4px;
+    background: #F3F5FC;
+    height: fit-content;
+}
+
+.button {
+    display: flex;
+    padding: 12px 8px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    background: #32343A;
+    cursor: pointer;
+}
+
+.button a span{
+    color: #FFF;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.close{
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
 }
